@@ -16,7 +16,7 @@ import GiteeIcon from '@site/static/svg/gitee.svg'
 import styles from './hero.module.scss'
 
 function Hero() {
-  const trails = useTrail(5, {
+  const trails = useTrail(6, {
     from: {
       opacity: 0,
       transform: 'translate3d(0px, 2em, 0px)',
@@ -27,7 +27,7 @@ function Hero() {
     },
     config: {
       mass: 3,
-      tension: 460,
+      tension: 300,
       friction: 45,
     },
   })
