@@ -23,13 +23,13 @@ keywords: [blog, docusaurus, gitalk]
 
 默认开启，可在 Settings -> Features -> Issues 中设置
 
-![image-20220122141447919](https://img.kuizuo.cn/20220122141447.png)
+![开启 issues 功能](./images/1681809448501.png)
 
 ### 3、注册一个 Github applications
 
 点击[此处](https://github.com/settings/developers)创建或在 github 右上角路径 settings -> Developer settings -> OAuth Apps
 
-![image-20220121225059192](https://img.kuizuo.cn/20220121225106.png)
+![注册一个 Github applications](./images/1681809470340.png)
 
 - Homepage URL：就是博客的网址（如果是 github.io 的 page）
 - Authorization callback URL: 就是 github 权限验证的回调地址，一般默认就是域名
@@ -38,7 +38,7 @@ keywords: [blog, docusaurus, gitalk]
 
 创建成功后，就可以获取到 Client ID 和 Client Secret 了，保存下来。
 
-![image-20220122130221871](https://img.kuizuo.cn/20220122130222.png)
+![获取 Client ID 和 Client Secret](./images/1681809488067.png)
 
 ### 5、安装
 
@@ -164,7 +164,7 @@ options 有个选项 repo，填写的是仓库名称，不是链接，像上面�
 
 通过 github api 还可以获取 issues 列表
 
-访问 https://api.github.com/repos/kuizuo/blog/issues，返回结果如下
+访问 [issues](https://api.github.com/repos/kuizuo/blog/issues)，返回结果如下
 
 ```json
 [
@@ -266,8 +266,8 @@ options 有个选项 repo，填写的是仓库名称，不是链接，像上面�
 
 #### 评论页
 
-![image-20220122164034147](https://img.kuizuo.cn/20220122164034.png)
+![github评论页](./images/1681810009924.png)
 
 #### issues 页面
 
-![image-20220122163957435](https://img.kuizuo.cn/20220122163957.png)
+![github issues 页面](./images/1681810036330.png)
