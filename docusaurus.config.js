@@ -1,4 +1,8 @@
+// @ts-check
+// 注意：类型注释允许类型检查和 IDE 自动完成
 const path = require("path");
+const lightCodeTheme = require('prism-react-renderer/themes/nightOwl');
+const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 const beian = "粤ICP备2022065970号-1";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -26,6 +30,8 @@ const config = {
     ],
     path: "i18n", // 所有区域设置文件夹都相对于的根文件夹
   },
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   plugins: [
     /*"docusaurus-plugin-matomo", // Matomo 统计插件，用于跟踪网站的访问量和用户行为等数据。*/
     require.resolve('docusaurus-plugin-image-zoom'), // 图片放大插件，可以在鼠标移动到图片上时自动放大显示。
@@ -272,8 +278,8 @@ const config = {
           ],
         }, // Algolia 插件
         prism: {
-          theme: require("prism-react-renderer/themes/nightOwl"),
-          darkTheme: require("prism-react-renderer/themes/vsDark"),
+          theme: lightCodeTheme,
+          darkTheme: darkCodeTheme,
           additionalLanguages: [
             "java",
             "php",
