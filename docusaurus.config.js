@@ -27,7 +27,7 @@ const config = {
   },
   plugins: [
     /*"docusaurus-plugin-matomo", // Matomo 统计插件，用于跟踪网站的访问量和用户行为等数据。*/
-    "docusaurus-plugin-image-zoom", // 图片放大插件，可以在鼠标移动到图片上时自动放大显示。
+    require.resolve('docusaurus-plugin-image-zoom'), // 图片放大插件，可以在鼠标移动到图片上时自动放大显示。
     "docusaurus-plugin-sass", // Sass 插件，用于处理 Sass 样式文件。
     path.resolve(__dirname, "./src/plugin/plugin-baidu-tongji"), // 自定义百度统计插件，用于将网站的访问量和用户行为等数据发送给百度统计。
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"), // 自定义百度推送插件，用于将网站的 URL 提交给百度搜索引擎进行索引。
