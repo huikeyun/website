@@ -25,7 +25,7 @@ keywords: [chrome, plugin, develop]
 
 首先打开 Chrome，如下图即可进入插件的管理页面
 
-![image-20200922225606159](https://img.kuizuo.cn/image-20200922225606159.png)
+![](./images/1681824700362.png)
 
 这时候记得把右上角的开发者模式给勾上，如果不勾上的话你无法直接将文件夹拖入 Chrome 进行安装，就只能安装`.crx`格式的文件。Chrome 要求插件必须从它的 Chrome 应用商店（需要翻墙）安装，其它任何网站下载的都无法直接安装，所以可以把`crx`文件解压，然后通过开发者模式直接加载。
 
@@ -41,7 +41,7 @@ keywords: [chrome, plugin, develop]
 
 可以理解为后台，同时这个页面会一直常驻在浏览器中，而主要 background 权限非常高，几乎可以调用所有的 Chrome 扩展 API（除了 devtools），基本很多操作都是放在 background 执行，返回给 content，而且它可以**无限制跨域**，也就是可以跨域访问任何网站而无需要求对方设置`CORS`。这对我们后面要在 content 中发送跨域请求至关重要！
 
-我习惯的做法是通过`”page”："background.html"`来导入`background.js`或其他 js 代码，如下
+我习惯的做法是通过`"page"："background.html"`来导入`background.js`或其他 js 代码，如下
 
 ```json
 // manifest.json
@@ -72,7 +72,7 @@ keywords: [chrome, plugin, develop]
 
 有时候你在编写代码中出现了中文可能会出现了如下的乱码，
 
-![image-20200923214834081](https://img.kuizuo.cn/image-20200923214834081.png)
+![](./images/1681824942782.png)
 
 我遇到的原因是就是我原先的`background.html`代码写成如下的情况
 
@@ -246,7 +246,7 @@ window.addEventListener(
 
 关于 Chrome 的主要内容也就这些，实际开发如果有个模板就能大大方便开发，在原文章中该作者已经分享了有对应的源代码，这里放上我自写的 Chrome 模板编写过程。
 
-![image-20210820004414785](https://img.kuizuo.cn/image-20210820004414785.png)
+![](./images/1681824988239.png)
 
 当然，这里需要提几点地方：
 
@@ -495,8 +495,8 @@ sendAjaxToBg("http://...", "GET", null, function(response){
 
 一个验证码识别，有时候在登录的时候需要输入验证码是件非常痛苦的事情。于是乎我就通过调用打码 Api 接口写了个自动识别验证码并填写的。也提供了非常方便的右键识别验证码的功能。具体效果如图（实际上还是得第一次先确认要识别的图片框与输入框，下次加载的时候需要手动点击验证码才会自动生效，还是不够智能的，不过成就感十足）
 
-![image-20210820001938051](https://img.kuizuo.cn/image-20210820001938051.png)
+![](./images/1681825175200.png)
 
-![wydm](https://img.kuizuo.cn/wydm.gif)
+![wydm](./images/wydm.gif)
 
 另一个是基于某布大佬的 WebHook 工具，所更改的，不过一直停滞着，有空将其完善一下。
