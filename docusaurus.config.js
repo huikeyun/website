@@ -7,7 +7,7 @@ const beian = "粤ICP备2022065970号-1";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   baseUrl: "/",
-  favicon: "img/favicon.ico",
+  favicon: "favicon.ico",
   headTags: [
     {
       attributes: {
