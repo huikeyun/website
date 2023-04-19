@@ -29,73 +29,38 @@ export const resourceData: ResourceCategory[] = [
     resources: friends,
   },
   {
-    name: '每周必刷🔥',
-    resources: [
-      {
-        name: '稀土掘金',
-        desc: '稀土掘金是一个技术博客平台，是程序员发布自己的技术文章、分享知识的地方',
-        logo: 'https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/favicons/apple-touch-icon.png',
-        href: 'https://juejin.cn/',
-      },
-      {
-        name: 'OSS Insight',
-        desc: 'Open Source Software Insight',
-        logo: '/img/resource/ossinsight.png',
-        href: 'https://ossinsight.io/',
-      },
-      {
-        name: 'Javascript Weekly',
-        desc: 'A newsletter of JavaScript articles, news and cool projects',
-        logo: '/img/resource/javascript.svg',
-        href: 'https://javascriptweekly.com/',
-      },
-      {
-        name: 'State of JavaScript',
-        desc: 'JavaScript 生态系统的年度开发人员调查',
-        logo: '/img/resource/stateofjs.svg',
-        href: 'https://stateofjs.com',
-      },
-      {
-        name: '前端食堂',
-        desc: '周周尝鲜，人工筛选前端圈每周最新资讯。—— 由 童欧巴 创作',
-        logo: '/img/resource/zhubai.png',
-        href: 'https://hungryturbo.zhubai.love/',
-      },
-    ],
-  },
-  {
     name: '站点🖥️',
     resources: [
       {
         name: 'Developer Roadmap',
         desc: 'Roadmap to becoming a web developer.',
-        logo: '/img/resource/roadmap.png',
+        logo: 'https://roadmap.sh/manifest/apple-touch-icon.png',
         href: 'https://roadmap.sh/',
       },
       {
         name: 'JS delivr',
         desc: '一个免费的CDN开源项目',
-        logo: '/img/resource/jsdelivr.webp',
+        logo: 'https://www.jsdelivr.com/icon_256x256.png',
         href: 'https://www.jsdelivr.com/',
       },
       {
         name: 'Shields.io',
         desc: '为你的开源项目生成高质量小徽章图标',
-        logo: '/img/resource/shields.png',
+        logo: 'data:image/png;base64,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',
         href: 'https://shields.io/',
         tags: ['图标', '首页'],
       },
       {
         name: 'namae',
         desc: 'namae可让您给您的应用程序、Web服务或组织起一个好名字',
-        logo: '/img/resource/namae.png',
+        logo: 'https://namae.dev/apple-touch-icon.png',
         href: 'https://namae.dev/',
         tags: ['起名'],
       },
       {
         name: 'Quick Reference',
         desc: '为开发人员分享快速参考备忘清单【速查表】',
-        logo: '/img/resource/quick reference.svg',
+        logo: 'data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%221em%22%20width%3D%221em%22%3E%20%3Cpath%20d%3D%22m21.66%2010.44-.98%204.18c-.84%203.61-2.5%205.07-5.62%204.77-.5-.04-1.04-.13-1.62-.27l-1.68-.4c-4.17-.99-5.46-3.05-4.48-7.23l.98-4.19c.2-.85.44-1.59.74-2.2%201.17-2.42%203.16-3.07%206.5-2.28l1.67.39c4.19.98%205.47%203.05%204.49%207.23Z%22%20fill%3D%22%23c9d1d9%22%2F%3E%20%3Cpath%20d%3D%22M15.06%2019.39c-.62.42-1.4.77-2.35%201.08l-1.58.52c-3.97%201.28-6.06.21-7.35-3.76L2.5%2013.28c-1.28-3.97-.22-6.07%203.75-7.35l1.58-.52c.41-.13.8-.24%201.17-.31-.3.61-.54%201.35-.74%202.2l-.98%204.19c-.98%204.18.31%206.24%204.48%207.23l1.68.4c.58.14%201.12.23%201.62.27Zm2.43-8.88c-.06%200-.12-.01-.19-.02l-4.85-1.23a.75.75%200%200%201%20.37-1.45l4.85%201.23a.748.748%200%200%201-.18%201.47Z%22%20fill%3D%22%23228e6c%22%20%2F%3E%20%3Cpath%20d%3D%22M14.56%2013.89c-.06%200-.12-.01-.19-.02l-2.91-.74a.75.75%200%200%201%20.37-1.45l2.91.74c.4.1.64.51.54.91-.08.34-.38.56-.72.56Z%22%20fill%3D%22%23228e6c%22%20%2F%3E%20%3C%2Fsvg%3E',
         href: 'https://jaywcjlove.github.io/reference',
         tags: ['手册'],
       },
