@@ -1,3 +1,4 @@
+import { Friends } from './friend'
 
 export interface Resource {
   name: string
@@ -12,7 +13,7 @@ export interface ResourceCategory {
   resources: Resource[]
 }
 
-/*const friends: Resource[] = Friends.map(f => {
+const friends: Resource[] = Friends.map(f => {
   return {
     ...f,
     name: f.title,
@@ -20,9 +21,13 @@ export interface ResourceCategory {
     logo: f.avatar,
     href: f.website,
   }
-})*/
+})
 
 export const resourceData: ResourceCategory[] = [
+  {
+    name: '友链👨‍💻',
+    resources: friends,
+  },
   {
     name: '每周必刷🔥',
     resources: [

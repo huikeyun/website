@@ -1,6 +1,7 @@
 /* hero */
 .hero {
   display: grid;
+  align-items: center;
   letter-spacing: 0.04em;
   grid-template-columns: 8fr 11fr;
   grid-gap: 20px;
@@ -113,7 +114,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 
 html[data-theme='dark'] {
   .bloghome__intro > p {

@@ -8,7 +8,7 @@ import Translate from '@docusaurus/Translate'
 import {useThemeConfig} from '@docusaurus/theme-common'
 import {ThemeConfig} from '@docusaurus/preset-classic'
 
-import HeroMain from './img/hero_main.svg'
+import HeroMain from '@site/static/svg/hero_main.svg'
 
 import {Icon} from '@iconify/react'
 import FeishuIcon from '@site/static/svg/feishu.svg'
