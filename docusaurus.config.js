@@ -18,15 +18,9 @@ const config = {
     },
   ],
   i18n: {
-    defaultLocale: "zh-CN",
-    localeConfigs: {
-      en: {
-        htmlLang: "en-US",
-      },
-    }, // 站点上部署的区域设置列表
+    defaultLocale: "zh-Hans",
     locales: [
-      "en",
-      "zh-CN",
+      "zh-Hans",
     ],
     path: "i18n", // 所有区域设置文件夹都相对于的根文件夹
   },
