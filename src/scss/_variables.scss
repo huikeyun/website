@@ -5,7 +5,7 @@ html {
   --divider-color: #ebebeb;
   --post-shadow-color: rgb(220 220 220 / 30%);
   --post-shadow: 0 0 20px 10px var(--post-shadow-color);
-  --content-background-color: #f8f9fa;
+  --content-background-color:#F5F5F5;
 
   --blog-item-background-color: linear-gradient(180deg, #ffffff, #fcfcfc);
 
@@ -44,7 +44,7 @@ html[data-theme='dark'] {
   --ifm-heading-color: #ffffff;
 
   --ifm-menu-color: #eceef1;
-  
+
   /* 搜索框 */
   --search-local-modal-background: var(--ifm-background-color);
   --search-local-modal-shadow: 0 0 48px hsl(0deg 100% 100% / 12%);

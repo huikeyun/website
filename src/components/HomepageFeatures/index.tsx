@@ -53,7 +53,7 @@ function Feature({
 }
 
 export default function HomepageFeatures() {
-  return (<section className={styles.features}>
+  return (<section className={clsx('container-wrapper', styles.features)}>
     <div className="container">
       <div className="row">
         {FeatureList.map((props, idx) => (<Feature key={idx} {...props} />))}

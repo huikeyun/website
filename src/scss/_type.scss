@@ -40,3 +40,11 @@ html[data-theme='dark'] ::-webkit-scrollbar-thumb {
     color: var(--ifm-color-primary);
   }
 }
+
+/* 内容容器 */
+.container-wrapper {
+  background: var(--content-background-color);
+
+  /*   box-shadow: 0 -16px 24px var(--post-shadow-color);
+  box-shadow: var(--blog-item-shadow); */
+}
