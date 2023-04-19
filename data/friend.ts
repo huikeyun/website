@@ -71,6 +71,12 @@ export const Friends: Friend[] = [
     website: 'https://www.alanwang.site',
     avatar: '/img/friend/alan.png',
   },
+  {
+    title: '字节智造',
+    description: '计算机应用之精华与优雅',
+    website: 'https://www.zsxcool.com',
+    avatar: '/img/friend/zsxcool.jpg',
+  },
 ]
 
 export type Friend = {
