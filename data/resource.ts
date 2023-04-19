@@ -34,7 +34,7 @@ export const resourceData: ResourceCategory[] = [
       {
         name: '稀土掘金',
         desc: '稀土掘金是一个技术博客平台，是程序员发布自己的技术文章、分享知识的地方',
-        logo: '/img/resource/juejin.png',
+        logo: 'https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/favicons/apple-touch-icon.png',
         href: 'https://juejin.cn/',
       },
       {
@@ -235,6 +235,20 @@ export const resourceData: ResourceCategory[] = [
         logo: '/img/resource/apifox.png',
         href: 'https://www.apifox.cn/',
         tags: ['工具'],
+      },
+      {
+        name: 'NSLookup',
+        desc: '在线NSLookup查询',
+        logo: 'http://www.ip33.com/favicon.ico',
+        href: 'http://www.ip33.com/nslookup.html',
+        tags: ['工具'],
+      },
+      {
+        name: '腾讯智影',
+        desc: '云端智能视频创作工具',
+        logo: 'https://zenvideo.gtimg.com/grail/dist/favicon.ico',
+        href: 'https://zenvideo.qq.com/',
+        tags: ['工具' , '创作'],
       },
     ],
   },

@@ -85,3 +85,4 @@ export type Friend = {
   website: string
   avatar?: any
 }
+
