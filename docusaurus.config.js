@@ -18,15 +18,9 @@ const config = {
     },
   ],
   i18n: {
-    defaultLocale: "zh-CN",
-    localeConfigs: {
-      en: {
-        htmlLang: "en-US",
-      },
-    }, // 站点上部署的区域设置列表
+    defaultLocale: "zh-Hans",
     locales: [
-      "en",
-      "zh-CN",
+      "zh-Hans",
     ],
     path: "i18n", // 所有区域设置文件夹都相对于的根文件夹
   },
@@ -76,7 +70,7 @@ const config = {
     [
       "@docusaurus/plugin-pwa",
       {
-        debug: true, // 是否在控制台输出调试信息。
+        debug: false, // 是否在控制台输出调试信息。
         offlineModeActivationStrategies: [
           "appInstalled",
           "standalone",
@@ -243,16 +237,6 @@ const config = {
               position: "left",
             },
             {
-              label: "标签",
-              to: "/blog/tags",
-              position: "right",
-            },
-            {
-              label: "归档",
-              to: "/blog/archive",
-              position: "right",
-            },
-            {
               label: "工具",
               position: "right",
               items: [
@@ -263,6 +247,24 @@ const config = {
                 {
                   label: "前端示例",
                   to: "https://example.kuizuo.cn",
+                },
+              ],
+            },
+            {
+              label: "其他",
+              position: "right",
+              items: [
+                {
+                  label: "友情链接",
+                  to: "/friends",
+                },
+                {
+                  label: "标签",
+                  to: "/blog/tags",
+                },
+                {
+                  label: "归档",
+                  to: "/blog/archive",
                 },
               ],
             },
