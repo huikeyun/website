@@ -1,4 +1,5 @@
 const { inject } = require('@vercel/analytics');
-export default () => {
+
+module.exports = () => {
   inject();
 };
