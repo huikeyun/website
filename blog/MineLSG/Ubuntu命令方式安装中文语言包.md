@@ -16,6 +16,8 @@ keywords: [ubuntu]
 * language-pack-zh-hant 繁体中文
 * language-pack-zh-hant-base
 
+<!-- truncate -->
+
 ## 安装中文语言包
 
 ```bash
