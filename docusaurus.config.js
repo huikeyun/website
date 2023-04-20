@@ -282,13 +282,7 @@ const config = {
         prism: {
           theme: lightCodeTheme,
           darkTheme: darkCodeTheme,
-          additionalLanguages: [
-            "java",
-            "php",
-            "rust",
-            "toml"
-          ],
-          defaultLanguage: "javascript",
+          defaultLanguage: "bash",
           magicComments: [
             {
               className: "theme-code-block-highlighted-line",
