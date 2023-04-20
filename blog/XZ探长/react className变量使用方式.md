@@ -3,8 +3,8 @@ slug: how-the-react-className-variable-is-used
 title: react className变量使用方式
 date: 2023-4-9 10:46:29
 authors: zhangqh22
-tags: [Sass,CSS 布局,CSS]
-keywords: [Sass,CSS 布局,CSS]
+tags: [Sass,CSS 布局]
+keywords: [Sass,CSS 布局]
 ---
 
 ![react-class-name.png](./images/1681347931152.png)

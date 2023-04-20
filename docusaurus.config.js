@@ -1,13 +1,13 @@
 // @ts-check
 // 注意：类型注释允许类型检查和 IDE 自动完成
 const path = require("path");
-const lightCodeTheme = require('prism-react-renderer/themes/nightOwl');
+const lightCodeTheme = require('prism-react-renderer/themes/vsLight');
 const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 const beian = "粤ICP备2022065970号-1";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   baseUrl: "/",
-  favicon: "img/favicon.ico",
+  favicon: "favicon.ico",
   headTags: [
     {
       attributes: {
@@ -200,7 +200,7 @@ const config = {
             src: "img/logo.svg", // 浅色模式下徽标图像的网址
             srcDark: "img/logo.svg", // 在深色模式下使用的备用图像 URL
           }, // 徽标对象的自定义
-          hideOnScroll: true,
+          hideOnScroll: false,
           items: [
             {
               label: "云市场",
@@ -282,13 +282,7 @@ const config = {
         prism: {
           theme: lightCodeTheme,
           darkTheme: darkCodeTheme,
-          additionalLanguages: [
-            "java",
-            "php",
-            "rust",
-            "toml"
-          ],
-          defaultLanguage: "javascript",
+          defaultLanguage: "bash",
           magicComments: [
             {
               className: "theme-code-block-highlighted-line",

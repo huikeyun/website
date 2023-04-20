@@ -1,16 +1,16 @@
 .searchContainer {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .searchContainer input {
-  height: 30px;
-  border-radius: 15px;
-  padding: 10px;
-  border: 1px solid gray;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
 }
 
 .showcaseList {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
