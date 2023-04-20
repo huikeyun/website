@@ -200,7 +200,7 @@ const config = {
             src: "img/logo.svg", // 浅色模式下徽标图像的网址
             srcDark: "img/logo.svg", // 在深色模式下使用的备用图像 URL
           }, // 徽标对象的自定义
-          hideOnScroll: true,
+          hideOnScroll: false,
           items: [
             {
               label: "云市场",
