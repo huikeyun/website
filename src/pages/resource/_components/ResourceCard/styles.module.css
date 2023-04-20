@@ -1,6 +1,7 @@
 .resourceCard {
     display: flex;
     overflow: hidden;
+    align-items: center;
     flex-direction: row;
     height: 100%;
     transition: all 0.3s ease-in-out;
