@@ -84,6 +84,8 @@ LANG="zh_CN.UTF-8"
 reboot
 ```
 
+<br/>
+<hr/>
+
 > 源地址：https://www.cnblogs.com/MineLSG/p/12663378.html   
-> 来源：博客园cnblogs    
 > © 版权声明：本文为博主原创文章，转载请附上博文链接！
