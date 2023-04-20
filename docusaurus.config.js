@@ -32,7 +32,6 @@ const config = {
     "docusaurus-plugin-sass", // Sass 插件，用于处理 Sass 样式文件。
     path.resolve(__dirname, "./src/plugin/plugin-baidu-tongji"), // 自定义百度统计插件，用于将网站的访问量和用户行为等数据发送给百度统计。
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"), // 自定义百度推送插件，用于将网站的 URL 提交给百度搜索引擎进行索引。
-    path.resolve(__dirname, "./src/plugin/vercel-analytics"), // 自定义 Vercel 插件，用于统计和分析
     [
       path.resolve(__dirname, "./src/plugin/plugin-content-blog"),
       {
