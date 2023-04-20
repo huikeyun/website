@@ -66,10 +66,10 @@ export const Friends: Friend[] = [
     avatar: 'https://www.alanwang.site/img/favicon.ico',
   },
   {
-    title: '字节智造',
-    description: '计算机应用之精华与优雅',
-    website: 'https://www.zsxcool.com',
-    avatar: 'https://www.zsxcool.com/favicon.ico',
+    title: '知了',
+    description: '朝闻道，夕可眠矣。',
+    website: 'https://zhile.io/',
+    avatar: 'https://avatars.githubusercontent.com/u/343491?v=4',
   },
 ]
 

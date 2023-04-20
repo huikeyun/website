@@ -1,3 +1,5 @@
+// noinspection HttpUrlsUsage
+
 import {Friends} from './friend'
 
 export interface Resource {
@@ -219,8 +221,27 @@ export const resourceData: ResourceCategory[] = [
       {
         name: '腾讯智影',
         desc: '云端智能视频创作工具',
-        logo: 'https://zenvideo.gtimg.com/grail/dist/favicon.ico',
         href: 'https://zenvideo.qq.com/',
+        logo: 'https://zenvideo.gtimg.com/grail/dist/favicon.ico',
+        tags: [
+          '工具',
+          '创作'
+        ],
+      },
+      {
+        name: 'WxPusher (微信推送服务)',
+        desc: '使用微信公众号作为通道的，实时信息推送平台',
+        href: 'https://wxpusher.zjiecode.com/',
+        logo: 'https://github.githubassets.com/favicons/favicon.svg',
+        tags: [
+          '工具',
+          '创作'
+        ],
+      },{
+        name: 'SMS-Activate',
+        desc: '在线接受短信的虚拟号码服务',
+        href: 'https://sms-activate.org/',
+        logo: 'https://sms-activate.org/favicon.ico',
         tags: [
           '工具',
           '创作'
@@ -781,7 +802,7 @@ export const resourceData: ResourceCategory[] = [
     ],
   },
   {
-    name: 'Frontend',
+    name: '前端',
     resources: [
       {
         name: 'Component party',
@@ -1131,6 +1152,20 @@ export const resourceData: ResourceCategory[] = [
         href: 'https://pixso.cn/',
         tags: ['设计'],
       },
+      {
+        name: '千通彩色彩管理',
+        desc: 'PANTONE潘通色卡',
+        href: 'https://www.qtccolor.com/',
+        logo: 'https://www.qtccolor.com/favicon.ico',
+        tags: ['设计','色彩'],
+      },
+      {
+        name: '设计导航',
+        desc: '分享优秀设计网站',
+        href: 'https://hao.shejidaren.com/',
+        logo: 'https://hao.shejidaren.com/images/apple-touch-icon.png',
+        tags: ['设计'],
+      },
     ],
   },
   {
@@ -1367,7 +1402,7 @@ export const resourceData: ResourceCategory[] = [
       {
         name: 'Metrics',
         desc: 'Create your own metrics',
-        logo: 'https://metrics.lecoq.io/.favicon.png',
+        logo: 'https://avatars.githubusercontent.com/u/22963968?v=4',
         href: 'https://metrics.lecoq.io/',
         tags: [],
       },
@@ -1383,6 +1418,13 @@ export const resourceData: ResourceCategory[] = [
         desc: 'Github 在你的 README 中获取动态生成的 GitHub 统计信息！',
         logo: 'https://camo.githubusercontent.com/9ad8cfe3215fff758ea74784f86ef0de25b6acfbd6a4fab19d9a13ff47b05843/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f616e7572616768617a72612f696d6167652f75706c6f61642f76313539343930383234322f6c6f676f5f636373776d652e737667',
         href: 'https://github.com/anuraghazra/github-readme-stats',
+        tags: [],
+      },
+      {
+        name: 'Github镜像站',
+        desc: '',
+        logo: 'https://assets.fgit.ml/favicons/favicon.svg',
+        href: 'https://hub.fgit.ml/',
         tags: [],
       },
     ],
@@ -1412,10 +1454,38 @@ export const resourceData: ResourceCategory[] = [
         tags: ['资源'],
       },
       {
-        name: 'Greasy Fork(油猴脚本)',
+        name: 'Greasy Fork（油猴脚本）',
         desc: '安全、有用的用户脚本大全',
         href: 'https://greasyfork.org/',
         logo: 'https://greasyfork.org/vite/assets/blacklogo96.e0c2c761.png',
+        tags: ['资源'],
+      },
+      {
+        name: '那些免费的砖',
+        desc: '发现设计/前端那些免费可商用的资源',
+        href: 'https://www.thosefree.com/',
+        logo: 'https://img.thosefree.com/static/logo.png',
+        tags: ['资源'],
+      },
+      {
+        name: 'Unsplash',
+        desc: '美丽的免费图片和图片',
+        href: 'https://unsplash.com/',
+        logo: 'https://unsplash.com/safari-pinned-tab.svg',
+        tags: ['资源'],
+      },
+      {
+        name: '大众脸影视后期特效',
+        desc: 'AE资源、PR模板、各种影视后期插件',
+        href: 'https://www.lookae.com/',
+        logo: 'https://www.lookae.com/favicon.ico',
+        tags: ['资源'],
+      },
+      {
+        name: 'Apphot',
+        desc: '软件分享',
+        href: 'https://apphot.cc/',
+        logo: 'https://apphot.cc/wp-content/uploads/2020/10/cropped-apphot-1-192x192.png',
         tags: ['资源'],
       },
     ],
