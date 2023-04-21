@@ -34,7 +34,7 @@ function Hero() {
 
   return (<animated.header className={clsx("section")}>
     <div className={clsx("container")}>
-      <div className={clsx(styles.hero)}>
+      <div className={styles.hero}>
         <div className={styles.bloghome__intro}>
           <animated.div style={trails[0]} className={styles.hero_text}>
             <Translate id="homepage.hero.title1">慧科云</Translate>
@@ -56,11 +56,12 @@ function Hero() {
             <br/>
           </animated.p>
           <SocialLinks style={trails[3]}/>
-          <animated.div className='button__links' style={trails[4]}>
-            <a className='button' href={'./docs'}>
+          <animated.div style={trails[4]}>
+            <a className={clsx('button', styles.hero_button)}
+               href={'./docs'}>
               <Translate id="hompage.hero.introduce">详细介绍</Translate>
             </a>
-            <a className='button'
+            <a className={clsx('button', styles.hero_button)}
                href={'https://cms.13aq.com/%E6%85%A7%E7%A7%91%E4%BA%91CMS-%E5%AE%89%E8%A3%85%E5%8C%85.zip'}
             >
               <Translate id="hompage.hero.down">下载安装包</Translate>

@@ -125,7 +125,7 @@ const config = {
           priority: 0.5, // 网站地图页面优先级。
         }, // 是否启用博客插件。
         theme: {
-          customCss: [require.resolve("./src/scss/custom.scss")], // 自定义样式表文件路径，可以用于覆盖默认主题样式或添加额外的样式。
+          customCss: [require.resolve("./src/css/custom.scss")], // 自定义样式表文件路径，可以用于覆盖默认主题样式或添加额外的样式。
         }, // 一组网站地图插件的配置
       }),
     ],

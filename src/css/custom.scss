@@ -1,9 +1,8 @@
-@import "fonts";
+@import "source-han-sans-sc";
+
 @import "root";
 @import "variables";
 @import "type";
-
-@import "button";
 
 .section {
   height: calc(100vh - 60px);
@@ -34,7 +33,7 @@
       display: inline-block;
       width: 0.4em;
       margin-right: 0.3em;
-      content: '.';
+      content: ".";
       color: transparent;
       background: var(--ifm-color-primary);
     }
@@ -47,7 +46,7 @@
       display: inline-block;
       width: 0.3em;
       margin-right: 0.3em;
-      content: '.';
+      content: ".";
       color: transparent;
       background: var(--ifm-color-primary);
     }
@@ -60,7 +59,7 @@
       display: inline-block;
       width: 0.2em;
       margin-right: 0.3em;
-      content: '.';
+      content: ".";
       color: transparent;
       background: var(--ifm-color-primary);
     }
@@ -161,8 +160,8 @@
   background: var(--card-background);
   grid-template-columns: max-content 1fr;
   grid-template-areas:
-    'title title'
-    'tags date';
+    "title title"
+    "tags date";
   column-gap: 2em;
   row-gap: 1em;
 
@@ -195,7 +194,7 @@
     justify-self: end;
 
     &::before {
-      content: '\e62b';
+      content: "\e62b";
     }
   }
 
@@ -259,7 +258,7 @@
   display: flex;
 }
 
-html[data-theme='dark'] .post__tags {
+html[data-theme="dark"] .post__tags {
   color: #d4e8fa;
   background: var(--tag-background-dark);
 }
@@ -282,7 +281,7 @@ html[data-theme='dark'] .post__tags {
   }
 }
 
-html[data-theme='dark'] .pagination-nav__link {
+html[data-theme="dark"] .pagination-nav__link {
   color: white;
   border: none;
   background: var(--tag-background-dark);
@@ -355,7 +354,7 @@ html[data-theme='dark'] .pagination-nav__link {
         visibility: hidden;
         width: 100%;
         height: 2px;
-        content: '';
+        content: "";
         transition: all 0.3s linear;
         transform: scaleX(0);
         background: var(--ifm-color-primary);
@@ -587,7 +586,7 @@ code {
   }
 }
 
-div[class^='announcementBar_'] {
+div[class^="announcementBar_"] {
   font-weight: 700;
   background: repeating-linear-gradient(
                   -35deg,

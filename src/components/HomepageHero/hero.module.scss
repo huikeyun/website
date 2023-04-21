@@ -33,6 +33,18 @@
   color: var(--ifm-color-primary);
 }
 
+.hero_button {
+  margin: 0 0.7rem;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 11.3%, var(--ifm-color-primary-light) 161.54%);
+  box-shadow: rgb(0 105 165 / 35%) 0 0 32px;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+
 .bloghome__image {
   z-index: 5;
   overflow: hidden;

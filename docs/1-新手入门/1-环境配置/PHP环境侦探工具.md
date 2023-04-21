@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+id: PHP环境侦探工具 
 description: 检测 PHP 环境是否满足系统要求
 keywords:
   - PHP探针
