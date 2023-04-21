@@ -1,8 +1,5 @@
-aside{
-    flex: 0 0 calc(1 / 8 * 100%)!important;
-}
-main{
-    flex: 0 0 calc(7 / 8 * 100%)!important;
+.resource_aside{
+    flex: 0 0 calc(1 / 8 * 100%);
 }
 .sidebar {
     position: sticky;

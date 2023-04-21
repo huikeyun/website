@@ -69,13 +69,14 @@ export default function Resources() {
   const title = '网址导航'
   const description = '整合日常开发常用，推荐的网站导航页'
 
+
   return (
       <>
         <PageMetadata title={title} description={description} />
         <Layout>
           <div className="container margin-top--md">
             <div className="row">
-              <aside className="col">
+              <aside className={clsx("col", styles.resource_aside)}>
                 <CategoryNav />
               </aside>
               <main className="col">
