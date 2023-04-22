@@ -1,7 +1,7 @@
 // @ts-check
 // 注意：类型注释允许类型检查和 IDE 自动完成
 const path = require("path");
-const lightCodeTheme = require('prism-react-renderer/themes/nightOwl');
+const lightCodeTheme = require('prism-react-renderer/themes/vsLight');
 const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 const beian = "粤ICP备2022065970号-1";
 /** @type {import('@docusaurus/types').Config} */
