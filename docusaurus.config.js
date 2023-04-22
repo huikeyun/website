@@ -110,8 +110,6 @@ const config = {
         blog: false,
         docs: {
           breadcrumbs: true, // 是否在页面顶部显示面包屑导航。
-          docItemComponent: '@theme/DocItem', // 文档页面渲染组件。
-          docLayoutComponent: '@theme/DocPage', // 文档页面布局组件。
           path: 'docs', // 文档的路径。
           routeBasePath: 'docs', // 文档的路由基础路径。
           showLastUpdateAuthor: true, // 是否显示最后一次更新文档的作者。
