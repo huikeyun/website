@@ -1,7 +1,7 @@
 // @ts-check
 // 注意：类型注释允许类型检查和 IDE 自动完成
 const path = require("path");
-const lightCodeTheme = require('prism-react-renderer/themes/nightOwl');
+const lightCodeTheme = require('prism-react-renderer/themes/vsLight');
 const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 const beian = "粤ICP备2022065970号-1";
 /** @type {import('@docusaurus/types').Config} */
@@ -115,12 +115,6 @@ const config = {
           showLastUpdateAuthor: true, // 是否显示最后一次更新文档的作者。
           showLastUpdateTime: true,  // 是否显示最后一次更新文档的时间。
           sidebarPath: require.resolve('./sidebars.js'), // 侧边栏配置文件路径。
-          remarkPlugins: [
-            // import('remark-slug'), // 自动添加 slug
-          ], // Markdown 处理过程中使用的插件集合
-          rehypePlugins: [
-            // import('rehype-autolink-headings'), // 自动为标题添加锚点
-          ], // Markdown 处理过程中使用的插件集合
         }, // 一组文档插件的配置
         sitemap: {
           changefreq: 'weekly', // 网站地图更新频率
@@ -204,7 +198,8 @@ const config = {
             src: "img/logo.svg", // 浅色模式下徽标图像的网址
             srcDark: "img/logo.svg", // 在深色模式下使用的备用图像 URL
           }, // 徽标对象的自定义
-          hideOnScroll: true,
+          hideOnScroll: false, // 是否隐藏页面顶部的导航栏
+
           items: [
             {
               label: "云市场",
