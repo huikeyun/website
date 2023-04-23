@@ -161,8 +161,8 @@ const config = {
             },
             {
               html: `
-            <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-              <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
+            <a href="https://app.netlify.com/sites/huikeyun/deploys">
+              <img src="https://api.netlify.com/api/v1/badges/7d665cde-6a91-43d1-a94f-72dc427a8cd8/deploy-status" alt="Netlify Status" />
             </a>
           `,
             },
