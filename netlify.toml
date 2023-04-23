@@ -1,12 +1,29 @@
 [build]
-  command = "npm run build"
-  publish = "build"
+command = "npm run build"
+publish = "build"
+
 [context.production.environment]
-  NODE_ENV = "production"
+NODE_ENV = "production"
 [context.deploy-preview.environment]
-  NODE_ENV = "deploy-preview"
+NODE_ENV = "deploy-preview"
 [context.branch-deploy.environment]
-  NODE_ENV = "branch-deploy"
+NODE_ENV = "branch-deploy"
+
 [[edge_functions]]
 function = "hello"
 path = "/test"
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+
+# 可选，当类别低于阈值时生成失败
+[plugins.inputs.thresholds]
+performance = 0.9
+accessibility = 0.9
+best-practices = 0.9
+seo = 0.9
+pwa = 0.9
+
+# （可选）将轻应用服务器报告部署到站点下的路径
+[plugins.inputs.audits]
+output_path = "reports/lighthouse.html"
