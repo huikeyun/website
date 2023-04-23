@@ -3,7 +3,6 @@
 import React from 'react'
 import clsx from 'clsx';
 
-import {animated, useTrail} from '@react-spring/web'
 import Translate from '@docusaurus/Translate'
 import {useThemeConfig} from '@docusaurus/theme-common'
 import {ThemeConfig} from '@docusaurus/preset-classic'
@@ -16,47 +15,31 @@ import GiteeIcon from '@site/static/svg/gitee.svg'
 import styles from './hero.module.scss'
 
 function Hero() {
-  const trails = useTrail(6, {
-    from: {
-      opacity: 0,
-      transform: 'translate3d(0px, 2em, 0px)',
-    },
-    to: {
-      opacity: 1,
-      transform: 'translate3d(0px, 0px, 0px)',
-    },
-    config: {
-      mass: 3,
-      tension: 300,
-      friction: 45,
-    },
-  })
-
-  return (<animated.header className={clsx("section")}>
+  return (<header className={clsx("section")}>
     <div className={clsx("container")}>
       <div className={styles.hero}>
         <div className={styles.bloghome__intro}>
-          <animated.div style={trails[0]} className={styles.hero_text}>
+          <div className={styles.hero_text}>
             <Translate id="homepage.hero.title1">慧科云</Translate>
             <span className={styles.intro__name}>
             <Translate id="homepage.hero.title2">内容管理</Translate>
           </span>
             <Translate id="homepage.hero.title3">框架</Translate>
             <br/>
-          </animated.div>
-          <animated.p style={trails[1]}>
+          </div>
+          <p>
             <Translate id="homepage.hero.text">
               多模块 &nbsp; 多应用 &nbsp; API接口 &nbsp; 小程序
             </Translate>
-          </animated.p>
-          <animated.p style={trails[2]}>
+          </p>
+          <p>
             <Translate id="homepage.hero.copyright">
               著作权登记号：2022SR1480776
             </Translate>
             <br/>
-          </animated.p>
-          <SocialLinks style={trails[3]}/>
-          <animated.div style={trails[4]}>
+          </p>
+          <SocialLinks/>
+          <div>
             <a className={clsx('button', styles.hero_button)}
                href={'./docs'}>
               <Translate id="hompage.hero.introduce">详细介绍</Translate>
@@ -66,16 +49,14 @@ function Hero() {
             >
               <Translate id="hompage.hero.down">下载安装包</Translate>
             </a>
-          </animated.div>
+          </div>
         </div>
         <div className={styles.bloghome__image}>
-          <animated.div style={trails[5]}>
-            <HeroMain/>
-          </animated.div>
+          <HeroMain/>
         </div>
       </div>
     </div>
-  </animated.header>)
+  </header>)
 }
 
 export function SocialLinks({...prop}) {
@@ -94,7 +75,7 @@ export function SocialLinks({...prop}) {
     zhihu: string
   }
 
-  return (<animated.div className={styles.social__links} {...prop}>
+  return (<div className={styles.social__links} {...prop}>
     <a href="/blog/rss.xml" target="_blank">
       <Icon icon="ri:rss-line"/>
     </a>
@@ -119,7 +100,7 @@ export function SocialLinks({...prop}) {
     {/* <a href={socials.zhihu} target="_blank">
         <Icon icon="ri:zhihu-line" />
       </a>*/}
-  </animated.div>)
+  </div>)
 }
 
 export default Hero
