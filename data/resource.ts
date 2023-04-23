@@ -237,11 +237,22 @@ export const resourceData: ResourceCategory[] = [
           '工具',
           '创作'
         ],
-      },{
+      },
+      {
         name: 'SMS-Activate',
         desc: '在线接受短信的虚拟号码服务',
         href: 'https://sms-activate.org/',
         logo: 'https://sms-activate.org/favicon.ico',
+        tags: [
+          '工具',
+          '创作'
+        ],
+      },
+      {
+        name: '营业执照查询',
+        desc: '国家企业信用信息公示系统',
+        href: 'https://www.gsxt.gov.cn/',
+        logo: 'https://www.gsxt.gov.cn/favicon.ico',
         tags: [
           '工具',
           '创作'
@@ -1157,7 +1168,10 @@ export const resourceData: ResourceCategory[] = [
         desc: 'PANTONE潘通色卡',
         href: 'https://www.qtccolor.com/',
         logo: 'https://www.qtccolor.com/favicon.ico',
-        tags: ['设计','色彩'],
+        tags: [
+          '设计',
+          '色彩'
+        ],
       },
       {
         name: '设计导航',
@@ -1437,7 +1451,11 @@ export const resourceData: ResourceCategory[] = [
         desc: '精选4K蓝光原盘下载,顶级收藏',
         logo: 'https://www.yinfans.me/wp-content/themes/Loos2/images/favicon.ico',
         href: 'https://www.yinfans.me/',
-        tags: ['电影','电视剧','音乐'],
+        tags: [
+          '电影',
+          '电视剧',
+          '音乐'
+        ],
       },
       {
         name: 'Themefisher',
