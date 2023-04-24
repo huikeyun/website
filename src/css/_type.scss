@@ -3,13 +3,14 @@
   width: 5px;
   height: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background-color: var(--ifm-color-primary);
 }
 
 /* 内容容器 */
-.container-wrapper{
+.container-wrapper {
   background: var(--content-background-color);
 }
 
@@ -23,6 +24,15 @@
 }
 
 /* 重新设置 col */
-.col{
+.col {
   padding: var(--ifm-spacing-horizontal);
+}
+
+/* 代码片段样式 */
+code {
+  margin-top: -2px;
+  padding: 4px 6px;
+  font-size: 13px;
+  line-height: 13px;
+  display: inline-block;
 }
