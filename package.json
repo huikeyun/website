@@ -14,6 +14,7 @@
     "start-no-open": "docusaurus start --no-open",
     "start:en": "docusaurus start --locale en",
     "build": "docusaurus build",
+    "netlify-dev": "netlify dev",
     "swizzle": "docusaurus swizzle",
     "clear": "docusaurus clear && rimraf changelog && rimraf _dogfooding/_swizzle_theme_tests",
     "serve": "docusaurus serve",
