@@ -23,14 +23,14 @@
   box-shadow: var(--blog-item-shadow);
 }
 
-/* 重新设置 col */
+/* col */
 .col {
   padding: var(--ifm-spacing-horizontal);
 }
 
-/* 代码片段样式 */
+/* 代码块 */
 code {
-  margin-top: -2px;
+  margin: -2px 3px 0 3px;
   padding: 4px 6px;
   font-size: 13px;
   line-height: 13px;
