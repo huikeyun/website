@@ -3,7 +3,7 @@ html {
   color: rgb(40, 61, 87);
 
   /* 内容背景颜色 */
-  --content-background-color: #f8f9fa;
+  --content-background-color: rgb(248, 249, 250);
 
   /* 博客文章容器 */
   --blog-item-background-color: linear-gradient(180deg, #ffffff, #fcfcfc);
@@ -11,30 +11,30 @@ html {
 
   /* 代码块 */
   .theme-code-block {
-    --prism-background-color: #eeeeee !important;
+    --prism-background-color: rgb(238, 238, 238) !important;
   }
 
   /* 标题文字颜色 */
   :is(h1, h2, h3, h4, h5, h6) {
-    --ifm-heading-color: hsl(214deg 78% 17%);
+    --ifm-heading-color: rgb(10, 39, 77);
   }
 
 }
 
 html[data-theme="dark"] {
   /* 基础字体颜色 */
-  color: rgb(211, 216, 222);
+  color: #d3d8de;
 
   /* 内容背景颜色 */
   --content-background-color: inherit;
 
   /* 博客文章容器 */
-  --blog-item-background-color: linear-gradient(145deg, #041a31, #000000);
-  --blog-item-shadow: 0 10px 60px 5px #253748, 0 0 10px 0 #253748;
+  --blog-item-background-color: linear-gradient(145deg, rgb(4, 26, 49), rgb(0, 0, 0));
+  --blog-item-shadow: 0 10px 60px 5px rgb(37, 55, 72), 0 0 10px 0 rgb(37, 55, 72);
 
   /* 代码块 */
   .theme-code-block {
-    --prism-background-color: #2a2a2a !important;
+    --prism-background-color: rgb(42, 42, 42) !important;
   }
 
   :is(h1, h2, h3, h4, h5, h6) {
