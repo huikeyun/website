@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 0.1
 description: 了解什么是内容管理系统
 draft: false
 keywords:
