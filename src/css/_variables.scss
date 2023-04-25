@@ -19,6 +19,26 @@ html {
     --ifm-heading-color: rgb(10, 39, 77);
   }
 
+  /* 搜索框 */
+  --search-local-modal-background: hsl(0deg 0% 100%);
+  --search-local-modal-shadow: 0 0 48px hsl(0deg 0% 0% / 12%);
+
+  /* 进度条背景 */
+  --progress-bar-background-color: #f3f3f3;
+
+  /* 选中未选中 */
+  --btn-selected: var(--ifm-color-primary);
+  --btn-unselected: #cecece;
+
+  /* 标签背景 */
+  --tag-background: var(--ifm-color-primary);
+  --tag-background-dark: #0179fa77;
+  --tag-background-light: #1982bb;
+
+  /* 代码块背景 */
+  --ifm-code-background: #12affa1a;
+  --ifm-code-color: var(--ifm-color-primary);
+  --prism-background-color: #f6f8fa;
 }
 
 html[data-theme="dark"] {
@@ -41,5 +61,12 @@ html[data-theme="dark"] {
     --ifm-heading-color: hsl(214deg 100% 96%);
 
   }
+
+  /* 搜索框 */
+  --search-local-modal-background: var(--ifm-background-color);
+  --search-local-modal-shadow: 0 0 48px hsl(0deg 100% 100% / 12%);
+
+  /* 进度条背景 */
+  --progress-bar-background-color: #3e3e3e;
 
 }
