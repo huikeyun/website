@@ -18,7 +18,7 @@ add_header X-Content-Type-Options "nosniff";
 add_header X-XSS-Protection "1; mode=block";
 add_header X-Frame-Options SAMEORIGIN;
 add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; preload";
-add_header 'Referrer-Policy' 'origin'; 
+add_header 'Referrer-Policy' 'origin';
 add_header X-Download-Options noopen;
 add_header X-Permitted-Cross-Domain-Policies none;
 ```
@@ -30,16 +30,16 @@ add_header X-Permitted-Cross-Domain-Policies none;
 应对漏洞：XSS攻击
 
 **配置参数**
-* `script-src` 外部脚本  
-* `style-src` 样式表  
-* `img-src` 图像  
-* `media-src` 媒体文件（音频和视频）  
-* `font-src` 字体文件  
-* `object-src` 插件（比如 Flash）  
-* `child-src` 框架   
-* `frame-ancestors` 嵌入的外部资源（比如`<frame>`、`<iframe>`、`<embed>`和`<applet>`）   
-* `connect-src` HTTP 连接（通过 XHR 、 WebSockets 、 EventSource 等）    
-* `worker-src` worker 脚本  
+* `script-src` 外部脚本
+* `style-src` 样式表
+* `img-src` 图像
+* `media-src` 媒体文件（音频和视频）
+* `font-src` 字体文件
+* `object-src` 插件（比如 Flash）
+* `child-src` 框架
+* `frame-ancestors` 嵌入的外部资源（比如`<frame>`、`<iframe>`、`<embed>`和`<applet>`）
+* `connect-src` HTTP 连接（通过 XHR 、 WebSockets 、 EventSource 等）
+* `worker-src` worker 脚本
 * `manifest-src` manifest 文件
 
 通过上诉配置，来控制平台只能执行同源的或者规定源（网址）的js、css等脚本。该配置由浏览器执行，启动后，不符合规则的外部资源就会被拒绝，从而一定程度屏蔽了XSS攻击。
@@ -61,7 +61,7 @@ add_header Content-Security-Policy "default-src 'self' xxx.xxx.com(允许的地�
 此配置会屏蔽范围外的脚本，如果是已经上线的系统，需要考虑下是否有引入外部脚本的情况，避免盲目增加配置，导致生产事故。慎用。。
 
 :::
- 
+
 ## X-Content-Type-Options
 
 约定资源的响应头，屏蔽内容嗅探攻击。
@@ -82,13 +82,13 @@ add_header X-Content-Type-Options "nosniff";
 
 **配置参数**
 
-* `X-XSS-Protection: 0` 关闭防护   
-* `X-XSS-Protection: 1` 开启防护  
+* `X-XSS-Protection: 0` 关闭防护
+* `X-XSS-Protection: 1` 开启防护
 * `X-XSS-Protection: 1; mode=block`  启防护 如果被攻击，阻止脚本执行。
 
 ```bash title='nginx配置'
 add_header X-XSS-Protection "1; mode=block";
-``` 
+```
 
 ## X-Frame-Options
 
@@ -99,8 +99,8 @@ add_header X-XSS-Protection "1; mode=block";
 攻击者会用一个自己网站，用ifream或者fream嵌套的方式引入目标网站，诱使用户点击。从而劫持用户点击事件。
 
 **配置的三个参数**
-* `deny` 标识该页面不允许在frame中展示，即便在相同域名的页面中嵌套也不行。  
-* `sameorigin` 可以在同域名的页面中frame中展示  
+* `deny` 标识该页面不允许在frame中展示，即便在相同域名的页面中嵌套也不行。
+* `sameorigin` 可以在同域名的页面中frame中展示
 * `allow-form url` 指定的fream中展示。
 
 ```bash title='nginx配置'
@@ -188,5 +188,5 @@ proxy_cookie_path / "/; Path=/; Secure; HttpOnly";
 <br/>
 <hr/>
 
-> 源地址：https://blog.csdn.net/liulangdewoniu/article/details/116459468   
+> 源地址：https://blog.csdn.net/liulangdewoniu/article/details/116459468
 > © 版权声明：本文为博主原创文章，转载请附上博文链接！

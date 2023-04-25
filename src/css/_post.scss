@@ -1,0 +1,110 @@
+.post__list-item {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas:
+    "title title"
+    "tags date";
+  column-gap: 2em;
+  row-gap: 1em;
+  align-items: center;
+  padding: 1em 1.2em;
+  background: var(--blog-item-background-color);
+  box-shadow: var(--blog-item-shadow);
+  border-radius: 6px;
+  position: relative;
+
+  &:hover {
+    box-sizing: border-box;
+    box-shadow: var(--blog-item-shadow);
+    transition: all 0.5s;
+  }
+
+  .post__list-title {
+    color: inherit;
+    font-size: 1em;
+    text-decoration: none;
+    transition: 0.6s;
+    grid-area: title;
+
+    &:hover {
+      color: var(--ifm-color-primary);
+    }
+  }
+
+  .post__list-stick {
+    grid-area: stick;
+    justify-self: end;
+    color: #6ebdff;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    display: inline-block;
+    font-size: 1.5rem;
+
+    &::before {
+      content: "\e62b";
+    }
+  }
+
+  .post__list-tags {
+    grid-area: tags;
+    /* overflow-x: auto; */
+    padding: 0.2em 0;
+    white-space: nowrap;
+
+    a {
+      background: white;
+    }
+  }
+
+  .post__list-date {
+    grid-area: date;
+    justify-self: end;
+    color: var(--ifm-color-emphasis-600);
+  }
+
+  /* 博客列表 */
+  /*   .bloghome__posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  } */
+
+  /* 发布日期 */
+  .post__date-container {
+    display: grid;
+    justify-items: center;
+  }
+
+  .post__day {
+    font-size: 4.75em;
+    line-height: 1em;
+    font-weight: 900;
+  }
+
+  .post__year_month {
+    align-self: start;
+    color: var(--post-pub-date-color);
+  }
+}
+
+.post__tags {
+  font-size: 0.85em;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 0.5rem;
+  color: var(--ifm-link-color);
+  border: 1px solid var(--docusaurus-tag-list-border);
+  transition: border var(--ifm-transition-fast);
+
+  &:hover {
+    border: 1px solid var(--ifm-link-color);
+    text-decoration: none;
+  }
+}
+
+html[data-theme="dark"] {
+  .post__tags {
+    color: #d4e8fa;
+    background: var(--tag-background-dark);
+  }
+}

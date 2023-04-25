@@ -1,7 +1,68 @@
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: var(--ifm-color-primary);
+}
+
 /* 内容容器 */
 .container-wrapper {
   background: var(--content-background-color);
+}
 
-  /*   box-shadow: 0 -16px 24px var(--post-shadow-color);
-  box-shadow: var(--blog-item-shadow); */
+/* 博客文章容器 */
+.blogPost-container {
+  margin-top: 0;
+  padding: 1em 2em 0.75em;
+  border-radius: 12px;
+  background: var(--blog-item-background-color);
+  box-shadow: var(--blog-item-shadow);
+}
+
+/* col */
+.col {
+  padding: var(--ifm-spacing-horizontal);
+}
+
+/* 代码块 */
+code {
+  margin: -2px 3px 0 3px;
+  padding: 4px 6px;
+  font-size: 13px;
+  line-height: 13px;
+  display: inline-block;
+}
+
+/* 标题 */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+/* 文章标签 */
+.post__tags {
+  font-size: 0.85em;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 0.5rem;
+  color: var(--ifm-link-color);
+  border: 1px solid var(--docusaurus-tag-list-border);
+  transition: border var(--ifm-transition-fast);
+
+  &:hover {
+    border: 1px solid var(--ifm-link-color);
+    text-decoration: none;
+  }
+}
+
+html[data-theme="dark"] .post__tags {
+  color: #d4e8fa;
+  background: var(--tag-background-dark);
 }

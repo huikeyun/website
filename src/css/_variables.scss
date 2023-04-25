@@ -1,49 +1,66 @@
 html {
-  color: hsl(214deg 37% 25%);
-  --post-title-color: hsl(220deg 79% 58%);
-  --post-pub-date-color: #8c8c8c;
-  --divider-color: #ebebeb;
-  --post-shadow-color: rgb(220 220 220 / 30%);
-  --post-shadow: 0 0 20px 10px var(--post-shadow-color);
-  --content-background-color:#F5F5F5;
+  /* 基础字体颜色 */
+  color: rgb(40, 61, 87);
 
+  /* 内容背景颜色 */
+  --content-background-color: rgb(248, 249, 250);
+
+  /* 博客文章容器 */
   --blog-item-background-color: linear-gradient(180deg, #ffffff, #fcfcfc);
-
   --blog-item-shadow: 0 20px 20px rgb(0 0 0 / 2.5%), 0 50px 80px rgb(0 0 0 / 5%);
 
-  --ifm-heading-color: #000000;
-  /* 文字颜色 */
-  -webkit-font-smoothing: unset;
+  /* 代码块 */
+  .theme-code-block {
+    --prism-background-color: rgb(238, 238, 238) !important;
+  }
+
+  /* 标题文字颜色 */
+  :is(h1, h2, h3, h4, h5, h6) {
+    --ifm-heading-color: rgb(10, 39, 77);
+  }
+
+  /* 搜索框 */
+  --search-local-modal-background: hsl(0deg 0% 100%);
+  --search-local-modal-shadow: 0 0 48px hsl(0deg 0% 0% / 12%);
+
+  /* 进度条背景 */
+  --progress-bar-background-color: #f3f3f3;
+
+  /* 选中未选中 */
+  --btn-selected: var(--ifm-color-primary);
+  --btn-unselected: #cecece;
+
+  /* 标签背景 */
+  --tag-background: var(--ifm-color-primary);
+  --tag-background-dark: #0179fa77;
+  --tag-background-light: #1982bb;
+
+  /* 代码块背景 */
+  --ifm-code-background: #12affa1a;
+  --ifm-code-color: var(--ifm-color-primary);
+  --prism-background-color: #f6f8fa;
+}
+
+html[data-theme="dark"] {
+  /* 基础字体颜色 */
+  color: #d3d8de;
+
+  /* 内容背景颜色 */
+  --content-background-color: inherit;
+
+  /* 博客文章容器 */
+  --blog-item-background-color: linear-gradient(145deg, rgb(4, 26, 49), rgb(0, 0, 0));
+  --blog-item-shadow: 0 10px 60px 5px rgb(37, 55, 72), 0 0 10px 0 rgb(37, 55, 72);
+
+  /* 代码块 */
+  .theme-code-block {
+    --prism-background-color: rgb(42, 42, 42) !important;
+  }
 
   :is(h1, h2, h3, h4, h5, h6) {
-    --ifm-heading-color: hsl(214deg 78% 17%);
+    --ifm-heading-color: hsl(214deg 100% 96%);
+
   }
-}
-
-.theme-code-block {
-  --prism-background-color: #f6f8fa !important;
-}
-
-html[data-theme='dark'] .theme-code-block {
-  --prism-background-color: #1e1e1e !important;
-}
-
-html[data-theme='dark'] {
-  color: hsl(214deg 15% 85%);
-  --ifm-color-primary: hsl(214deg 100% 60%);
-  --ifm-color-primary-light: hsl(214deg 100% 75%);
-  --post-title-color: rgb(255 255 255);
-  --post-pub-date-color: var(--ifm-color-gray-100);
-  --divider-color: #353535;
-  --ifm-toc-border-color: #313131;
-  --post-shadow-color: rgb(29 77 150 / 80%);
-  --content-background-color: inherit;
-  --blog-item-background-color: linear-gradient(145deg, #041a31, #000000);
-  --blog-item-shadow: 0 10px 60px 5px #253748, 0 0 10px 0 #253748;
-
-  --ifm-heading-color: #ffffff;
-
-  --ifm-menu-color: #eceef1;
 
   /* 搜索框 */
   --search-local-modal-background: var(--ifm-background-color);
@@ -51,16 +68,5 @@ html[data-theme='dark'] {
 
   /* 进度条背景 */
   --progress-bar-background-color: #3e3e3e;
-  /* 卡片背景 */
-  --card-background: #0c0c0c;
-
-  --ifm-text-color: var(--ifm-menu-color);
-  --ifm-secondary-text-color: #eeeeee;
-
-  --docusaurus-highlighted-code-line-bg: rgb(100 100 100);
-
-  :is(h1, h2, h3, h4, h5, h6) {
-    --ifm-heading-color: hsl(214deg 100% 96%);
-  }
 
 }
