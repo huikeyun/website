@@ -1,0 +1,6 @@
+cd /www/wwwroot/huikeyun_node_site/dev_website && \
+sudo git fetch --all && sudo git reset --hard origin/dev && sudo git pull && \
+yarn i && \
+yarn run clear && \
+yarn run write-translations && \
+yarn run build
