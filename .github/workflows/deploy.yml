@@ -9,15 +9,22 @@ jobs:
     name: 部署到 GitHub 页面
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: 签出存储库
+        uses: actions/checkout@v3
+
+      - name: 设置 Node
+        uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
+          cache: "yarn"
 
       - name: 安装依赖项
         run: yarn install --frozen-lockfile
-      - name: Build website
+      - name: 清理缓存
+        run: yarn clear
+      - name: 构建翻译文件
+        run: arn write-translations
+      - name: 构建站点
         run: yarn build
 
       # 部署到 GitHub 页面的常用操作：
