@@ -1,4 +1,4 @@
-name: 部署到 GitHub 页面
+name: 部署到 GitHub 页面流水线
 on:
   push:
     branches: [ "main" ]
@@ -18,12 +18,17 @@ jobs:
           node-version: 18
           cache: "yarn"
 
+      - name: 缓存 Node 模块
+        uses: actions/cache@v3
+        with:
+          path: ~/.yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
       - name: 安装依赖项
+        if: steps.cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
-      - name: 清理缓存
-        run: yarn clear
-      - name: 构建翻译文件
-        run: yarn write-translations
       - name: 构建站点
         run: yarn build
 
