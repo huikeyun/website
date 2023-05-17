@@ -6,7 +6,7 @@ on:
     branches: [ "main" ]
 jobs:
   deploy:
-    name: 部署到 GitHub 页面
+    name: 构建站点
     runs-on: ubuntu-latest
     steps:
       - name: 签出存储库
@@ -49,6 +49,3 @@ jobs:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}  # 引用配置，服务器的host名（IP或者域名domain.com）
           REMOTE_USER: ${{ secrets.REMOTE_USER }} # 引用配置，服务器登录名
           TARGET: '/www/wwwroot/blog'  # 部署到目标文件夹
-          SCRIPT_BEFORE: |
-            sudo apt-get update
-            sudo apt-get install -y rsync
