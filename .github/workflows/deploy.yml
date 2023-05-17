@@ -23,7 +23,7 @@ jobs:
       - name: 清理缓存
         run: yarn clear
       - name: 构建翻译文件
-        run: arn write-translations
+        run: yarn write-translations
       - name: 构建站点
         run: yarn build
 
