@@ -17,6 +17,9 @@ const config = {
       tagName: "meta",
     },
   ],
+  organizationName: "huikeyun", // 通常是您的 GitHub 组织用户名。
+  projectName: "website", // 通常是您的存储库名称。
+  deploymentBranch: "main",  // 部署分支的名字。
   i18n: {
     defaultLocale: "zh-CN",
     localeConfigs: {
@@ -192,7 +195,6 @@ const config = {
             srcDark: "img/logo.svg", // 在深色模式下使用的备用图像 URL
           }, // 徽标对象的自定义
           hideOnScroll: false, // 是否隐藏页面顶部的导航栏
-
           items: [
             {
               label: "云市场",
@@ -322,7 +324,7 @@ const config = {
       }), // 自定义主题的行为和外观
   title: "慧科云", // 网站的标题
   titleDelimiter: "-", // 网站标题分隔符
-  trailingSlash: true, // 是否在网站 URL 的末尾添加斜杠
+  trailingSlash: false, // 是否在网站 URL 的末尾添加斜杠
   url: "https://13aq.com", // 网站的基本 URL
 };
 module.exports = config;
