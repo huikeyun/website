@@ -1,32 +1,75 @@
-# 依赖
-/node_modules
+# 用户特定的内容
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
 
-# 生产
-/build
-/drafts
-/tmp
-cloudbaserc.json
+# AWS用户特定的内容
+.idea/**/aws.xml
 
 # 生成的文件
-.docusaurus
-.cache-loader
+.idea/**/contentModel.xml
 
-# 包
-/packages
+# 敏感或高频更新的文件
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-error.log*
+# Gradle 相关
+.idea/**/gradle.xml
+.idea/**/libraries
 
-# 杂项
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.env
-.vercel
+# Gradle 和 Maven 的自动导入功能
+# 当使用带有自动导入功能的 Gradle 或 Maven 时，应该排除模块文件，因为它们将被重新创建，可能会导致频繁变更。如果使用自动导入，请取消注释。
+.idea/artifacts
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+*.iml
+*.ipr
 
-# Local Netlify folder
-.netlify
+# CMake 相关
+cmake-build-*/
+
+# Mongo Explorer 插件
+.idea/**/mongoSettings.xml
+
+# 基于文件的项目格式
+*.iws
+
+# IntelliJ 相关
+out/
+
+# mpeltonen/sbt-idea 插件
+.idea_modules/
+
+# JIRA 插件
+atlassian-ide-plugin.xml
+
+# Cursive Clojure 插件
+.idea/replstate.xml
+
+# SonarLint 插件
+.idea/sonarlint/
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client 相关
+.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
+
+# 依赖
+/node_modules/

@@ -14,9 +14,8 @@
     "start-no-open": "docusaurus start --no-open",
     "start:en": "docusaurus start --locale en",
     "build": "docusaurus build",
-    "deploy": "vercel deploy",
     "swizzle": "docusaurus swizzle",
-    "clear": "docusaurus clear && rimraf changelog && rimraf _dogfooding/_swizzle_theme_tests",
+    "clear": "docusaurus clear && rimraf changelog && rimraf _dogfooding/_swizzle_theme_tests $$ rimraf i18n",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
@@ -35,6 +34,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "2.4.0",
+    "@docusaurus/plugin-content-blog": "^2.4.0",
     "@docusaurus/plugin-content-docs": "^2.4.0",
     "@docusaurus/plugin-content-pages": "^2.4.0",
     "@docusaurus/plugin-debug": "^2.4.0",
