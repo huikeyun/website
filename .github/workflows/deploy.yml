@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: "yarn|node_modules"  # 同时缓存yarn和node_modules
+          cache: 'yarn'
 
       - name: 安装依赖项
         run: yarn install --frozen-lockfile
