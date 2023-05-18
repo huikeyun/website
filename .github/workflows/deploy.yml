@@ -49,4 +49,3 @@ jobs:
           REMOTE_HOST: ${{ secrets.SSH_HOST }}  # 引用配置，服务器的host名（IP或者域名domain.com）
           REMOTE_USER: ${{ secrets.SSH_USERNAME }} # 引用配置，服务器登录名
           TARGET: '/www/wwwroot/huikeyun_node_site/website'  # 部署到目标文件夹
-
